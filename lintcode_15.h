@@ -15,7 +15,7 @@ public:
 			for (int i = 1; i < n; ++i)
 			{
 				int *p = new int[i + 1];
-				for (int l = 0; l < vctPre.size(); ++l)
+				for (size_t l = 0; l < vctPre.size(); ++l)
 				{
 					for (int j = 0; j <= i; ++j)
 					{

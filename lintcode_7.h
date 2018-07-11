@@ -29,7 +29,7 @@ public:
 		do
 		{
 			vector<TreeNode *> vctTemp;
-			for (int i = 0; i < vctNote.size(); ++i)
+			for (size_t i = 0; i < vctNote.size(); ++i)
 			{
 				if (vctNote[i] != 0)
 				{
@@ -65,11 +65,11 @@ public:
 		TreeNode * pHead = new TreeNode(stoi(vctSplit[0], nullptr, 0));
 		vector<TreeNode *> vctNote;
 		vctNote.push_back(pHead);
-		int i = 1;
+		size_t i = 1;
 		while (i < vctSplit.size())
 		{
 			vector<TreeNode *> vctTemp;
-			for (int n = 0; n < vctNote.size(); ++n)
+			for (size_t n = 0; n < vctNote.size(); ++n)
 			{
 				if (i < vctSplit.size() && vctSplit[i] != "$")
 				{
